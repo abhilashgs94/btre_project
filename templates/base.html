@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{% static '/css/bootstrap.css' %}" type="text/css">
     <!-- Lightbox -->
     <link rel="stylesheet" href="{% static '/css/lightbox.min.css' %}" type="text/css">
-    <title>BT Real Estate</title>
+    <title>BT Real Estate {% block title %}{% endblock %}</title>
     <style>
         #showcase {
             background-image: url(../static/img/showcase.jpg);
@@ -49,8 +49,6 @@
 
         #showcase-inner.showcase-search {
             min-height: 270px;
-        }
-
         }
     </style>
 </head>
